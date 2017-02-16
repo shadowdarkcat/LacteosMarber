@@ -1,7 +1,7 @@
 package mx.com.lacteosmarber.utils.properties;
 
-import com.sun.org.apache.xerces.internal.util.URI;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 import mx.com.lacteosmarber.generics.LOG.LogIntegralLm;
@@ -46,7 +46,7 @@ public class ReadPropertiesFile {
             } else {
                 return null;
             }
-        } catch (URI.MalformedURIException ex) {
+        } catch (MalformedURLException ex) {
             LogIntegralLm.errorMessage(MESSAGE, ex);
             throw new IntegralLmException(MESSAGE, ex);
         } catch (IOException ex) {
