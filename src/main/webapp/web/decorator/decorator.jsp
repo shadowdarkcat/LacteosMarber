@@ -24,6 +24,18 @@
 <link type="text/css" href="${pageContext.request.contextPath}/web/css/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet" />
 <link type="text/css" href="${pageContext.request.contextPath}/web/css/bootstrap/signin.css" rel="stylesheet" />
 <link type="text/css" href="${pageContext.request.contextPath}/web/css/style.css" rel="stylesheet" />
+
+<style type="text/css">
+
+    .navbar {background-color: lightblue ;background-image: none; }
+    .navbar .brand, .navbar .nav > li > a {color: black;}
+    .navbar .brand, .navbar .nav > li > a:hover {color: red;}  
+    .icon-bar {background-color: #1980EC !important;}
+    .collapsing, .in {background-color: #f1f1f1;}
+    .collapsing ul li a, .in ul li a {color: black;}
+    .collapsing ul li a:hover, .in ul li a:hover {color: #269abc!important;}
+</style>
+
 <!-- Fin Hojas de Estilo !-->
 
 <!-- Scripts Js !-->
@@ -34,6 +46,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/web/jquery/bootstrap/ie-emulation-modes-warning.js"></script>
 <!-- Fin Scripts Js !-->
 <script type="text/javascript">
+    var contextoGlobal = '/lacteosmarber'
     var RecaptchaOptions = {
         theme: 'white'
     };
